@@ -1,10 +1,10 @@
 {
-        "manifest_version": 2,
-        "name": "MaskItSpidey",
-        "description":"This extension chnages the background of your target website.",
-        "version":"1.0",
+        "manifest_version": 2,     //manifest version
+        "name": "MaskItSpidey",    //name of the extension
+        "description":"This extension chnages the background of your target website.",  //description of the extension
+        "version":"1.0",            //version of the extension
         "icons": {
-            "16":"/images/Logo16.png",
+            "16":"/images/Logo16.png",  //logo for different pixel sizes
             "48":"/images/Logo.png",
             "128":"/images/Logo.png"
         },     
@@ -17,8 +17,8 @@
 
         },
         "content_scripts":[{
-                "matches":["https://www.google.com/*"],
-                "css":["main.css"]
+                "matches":["https://www.google.com/*"],     //target website
+                "css":["main.css"]                          //css file, which changes css of the target website
             }]   
 
     }
